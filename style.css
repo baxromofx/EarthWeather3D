@@ -3,7 +3,7 @@
     padding:0;
     box-sizing:border-box;
 }
- 
+
 body{
     font-family:Arial,sans-serif;
     background:linear-gradient(to bottom,#6ec6ff,#dff6ff);
@@ -36,48 +36,27 @@ body{
 }
 
 #sun{
-
-width:30px;
-height:30px;
-border-radius:50%;
-position:absolute;
-top:20px;
-left:20px;
-background:radial-gradient(circle,#fff59d,#ffd600,#ff9800);
-box-shadow:0 0 40px gold;
-
+    width:70px;
+    height:70px;
+    border-radius:50%;
+    background:gold;
+    position:absolute;
+    top:20px;
+    left:20px;
+    box-shadow:0 0 40px orange;
 }
 
 #earth{
-    width:50px;
-    height:50px;
-    position:absolute;
-    top:50%;
-    left:50%;
-    transform:translate(-50%,-50%);
+    width:140px;
+    height:140px;
     border-radius:50%;
-
-    background:
-        radial-gradient(circle at 30% 30%, #4CAF50 0 12%, transparent 13%),
-        radial-gradient(circle at 70% 40%, #3FA34D 0 14%, transparent 15%),
-        radial-gradient(circle at 40% 75%, #5DBB63 0 10%, transparent 11%),
-        radial-gradient(circle, #5ec8ff, #1565c0 70%);
-
-    box-shadow:
-        inset -10px -10px 15px rgba(0,0,0,.4),
-        0 0 12px rgba(50,150,255,.6);
-
-    animation: rotateEarth 20s linear infinite;
+    background:radial-gradient(circle,#3fa9f5,#0d47a1);
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
 }
 
-@keyframes rotateEarth{
-    from{
-        transform:translate(-50%,-50%) rotate(0deg);
-    }
-    to{
-        transform:translate(-50%,-50%) rotate(360deg);
-    }
-}
 .info{
     padding:20px;
     text-align:center;
