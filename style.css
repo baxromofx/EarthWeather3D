@@ -78,7 +78,10 @@ box-shadow:0 0 40px gold;
         transform:translate(-50%,-50%) rotate(360deg);
     }
 }
-
+.info{
+    padding:20px;
+    text-align:center;
+}
 
 #time{
     font-size:42px;
