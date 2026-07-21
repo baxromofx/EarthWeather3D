@@ -74,56 +74,18 @@ box-shadow:0 0 40px gold;
     animation: earthSpin 25s linear infinite;
 }
 
-#earth::before{
-    content:"";
-    position:absolute;
-    width:100%;
-    height:100%;
+#earth{
+    width:60px;
+    height:60px;
     border-radius:50%;
-
-    background:
-    radial-gradient(circle at 20% 25%, rgba(255,255,255,.65), transparent 18%),
-    radial-gradient(circle at 70% 35%, rgba(255,255,255,.45), transparent 15%),
-    radial-gradient(circle at 50% 70%, rgba(255,255,255,.35), transparent 12%);
-
-    animation: clouds 12s linear infinite;
-}
-
-#earth::after{
-    content:"";
     position:absolute;
-    inset:-8px;
-    border-radius:50%;
-    border:3px solid rgba(120,220,255,.4);
-    filter:blur(3px);
-}
-
-@keyframes earthSpin{
-
-0%{
-transform:translate(-50%,-50%) rotate(0deg);
-}
-
-100%{
-transform:translate(-50%,-50%) rotate(360deg);
-}
-
-}
-
-@keyframes clouds{
-
-0%{
-transform:translateX(-15px);
-}
-
-50%{
-transform:translateX(15px);
-}
-
-100%{
-transform:translateX(-15px);
-}
-
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    background:radial-gradient(circle,#3fa9f5,#0d47a1);
+    box-shadow:
+        inset -8px -8px 12px rgba(0,0,0,.35),
+        0 0 12px rgba(50,150,255,.5);
 }
 
 .info{
