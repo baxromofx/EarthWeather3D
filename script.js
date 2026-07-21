@@ -94,3 +94,28 @@ document.getElementById("updateWeather").addEventListener("click", () => {
         }
     );
 });
+function updateSunMoon(){
+
+const hour=new Date().getHours();
+
+const sun=document.getElementById("sun");
+
+if(hour>=6 && hour<18){
+
+sun.style.background=
+"radial-gradient(circle,#fff59d,#ffd600,#ff9800)";
+sun.style.boxShadow="0 0 40px gold";
+
+}else{
+
+sun.style.background=
+"radial-gradient(circle,#ffffff,#d9d9d9,#9e9e9e)";
+sun.style.boxShadow="0 0 25px white";
+
+}
+
+}
+
+updateSunMoon();
+
+setInterval(updateSunMoon,60000);
